@@ -16,11 +16,15 @@ def generate(filename, graph, nodes, edges):
         file.write(colors)
 
 def main():
+    if len(sys.argv) < 3:
+        print("Usage: \n\tpython3 generate.py nodes edges")
+        return 
+
     numNodes = int(sys.argv[1])
     numEdges = int(sys.argv[2])
     G = nx.gnm_random_graph(numNodes,numEdges)
     
-    generate(G, numNodes, numEdges)
+    generate("graph.txt", G, numNodes, numEdges)
 
 
 if __name__ == "__main__":
