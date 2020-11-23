@@ -25,7 +25,7 @@ def main():
     numEdges = int(sys.argv[2])
     G = nx.gnm_random_graph(numNodes, numEdges)
 
-    generate("inputs/graph.txt", G, numNodes, numEdges)
+    generate(f"inputs/graph-{numNodes}-{numEdges}.txt", G, numNodes, numEdges)
 
 
 if __name__ == "__main__":
