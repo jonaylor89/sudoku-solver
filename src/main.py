@@ -41,7 +41,8 @@ def main():
     color_diff = new_colors - original_colors
 
     print(color_diff)
-    for v in solution.values(): print(v, end=" ")
+    for v in solution.values():
+        print(v, end=" ")
     print()
 
 
