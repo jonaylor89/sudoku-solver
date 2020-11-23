@@ -1,6 +1,14 @@
 
 # Super Graph Coloring
 
+**How to Run:**
+
+The main program expects input from stdin
+
+```sh
+cat inputs/graph-1000-100000.txt | python3 src/main.py  
+```
+
 ### **Random Graphs**
 
 Nodes: 50, Edges: 500, New Colors: 10, Max Degree: 27
